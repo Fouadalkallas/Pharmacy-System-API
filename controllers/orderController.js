@@ -75,18 +75,6 @@ exports.updateOrderStatus = async (req, res) => {
   }
 };
 
-// // Delete an order
-// exports.deleteOrder = async (req, res) => {
-//   try {
-//     const deletedOrder = await Order.findByIdAndDelete(req.params.id);
-//     if (!deletedOrder) {
-//       return res.status(404).json({ message: 'Order not found' });
-//     }
-//     res.json({ message: 'Order deleted successfully' });
-//   } catch (err) {
-//     res.status(500).json({ message: err.message });
-//   }
-// };
 // Delete an order and restore the stock
 exports.deleteOrder = async (req, res) => {
   try {
